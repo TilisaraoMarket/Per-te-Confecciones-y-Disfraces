@@ -186,13 +186,27 @@
             0% { transform: translateY(0); opacity: 1; }
             100% { transform: translateY(-50px); opacity: 0; }
         }
+
+        /* Logo responsive */
+        .navbar-logo {
+            height: 70px;
+            width: auto;
+        }
+        @media (max-width: 576px) {
+            .navbar-logo {
+                height: 100px;
+            }
+        }
     </style>
 </head>
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand" href="#">Per-te Confecciones</a>
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="images/logo de pe-rte2 disfraces_00001.png" alt="Per-te Confecciones" class="navbar-logo me-2 img-fluid">
+                <span>Per-te Confecciones</span>
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -405,8 +419,6 @@
                     <p>WhatsApp: +54 9 266 4505510</p>
                     <p>Síguenos en Instagram: @perte.confecciones.disfraces</p>
                     <p>Encuéntranos en Facebook: Perte Confecciones y Disfraces</p>
-                    <!-- Nueva línea con la dirección -->
-                    <p>Dirección: Belgrano y 25 de Mayo, Tilisarao, San Luis, Argentina</p>
                 </div>
             </div>
         </div>
